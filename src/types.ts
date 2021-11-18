@@ -412,9 +412,9 @@ export class EntryBibLaTeXAdapter extends Entry {
         // Drop any null parts and join
         return parts.filter((x) => x).join(' ');
       });
-      return names.join(', ');
+      return names.map(name => `[[${name}]]`).join(', ');
     } else {
-      return this.data.fields.author?.join(', ');
+      return this.data.fields.author?.map(name => `[[${name}]]`).join(', ');
     }
   }
 
