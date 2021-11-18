@@ -1,4 +1,11 @@
-# obsidian-citation-plugin
+# Obsidian Citation plugin ehanced
+
+## Modifications
+
+- [x] Look for markdown files outside of designated directory
+- [x] Make authorstrings output author names as tagged using "\[\[\<author name\>]]"
+
+## Intro
 
 This plugin for [Obsidian](https://obsidian.md) integrates your academic reference manager with the Obsidian editing experience.
 
@@ -30,6 +37,7 @@ The plugin offers four simple features at the moment:
 4. **Insert Markdown citation** (no hotkey by default): insert a [Pandoc-style citation][3] for a particular reference. (The exact format of the citation can be configured in the plugin settings.)
 
 ### Templates
+
 You can set up your own template for both the title and content of literature notes. The following variables can be used:
 
 ```
@@ -49,7 +57,9 @@ You can set up your own template for both the title and content of literature no
 * {{year}}
 * {{zoteroSelectURI}}
 ```
+
 For example, your literature note title template can simply be `@{{citekey}}` and the content template can look like:
+
 ```
 ---
 title: {{title}}
