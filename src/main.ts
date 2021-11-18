@@ -335,7 +335,14 @@ export default class CitationPlugin extends Plugin {
         const path = this.getPathForCitekey(citekey);
         const normalizedPath = normalizePath(path);
 
-        let file = this.app.vault.getAbstractFileByPath(normalizedPath);
+        let normalised_path_chunked = normalizedPath.split("/")
+
+        let file_matches = this.app.vault
+            .getMarkdownFiles()
+            .filter((f) => f.name.toLowerCase() == normalised_path_chunked[normalised_path_chunked.length - 1].toLowerCase());
+
+        let file = this.app.vault.getAbstractFileByPath(file_matches[0].path);
+
         if (file == null) {
             // First try a case-insensitive lookup.
             const matches = this.app.vault
