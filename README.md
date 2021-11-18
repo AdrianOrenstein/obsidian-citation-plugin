@@ -1,4 +1,4 @@
-# Obsidian Citation plugin ehanced
+# Obsidian Citation plugin enhanced
 
 ## Modifications
 
