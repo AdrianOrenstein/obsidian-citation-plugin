@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-citation-plugin",
+  "name": "obsidian-citation-plugin-adrian",
   "version": "0.4.4",
   "description": "Automatically search and insert citations from a Zotero library",
   "main": "main.js",
@@ -17,7 +17,7 @@
     ]
   },
   "keywords": [],
-  "author": "Jon Gauthier",
+  "author": "Jon Gauthier & Adrian Orenstein",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.1.0",

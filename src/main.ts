@@ -341,7 +341,12 @@ export default class CitationPlugin extends Plugin {
             .getMarkdownFiles()
             .filter((f) => f.name.toLowerCase() == normalised_path_chunked[normalised_path_chunked.length - 1].toLowerCase());
 
-        let file = this.app.vault.getAbstractFileByPath(file_matches[0].path);
+        if (file_matches.length == 0) {
+            let file = this.app.vault.getAbstractFileByPath(normalizedPath);
+        } else {
+            let file = this.app.vault.getAbstractFileByPath(file_matches[0].path);
+        }
+
 
         if (file == null) {
             // First try a case-insensitive lookup.
