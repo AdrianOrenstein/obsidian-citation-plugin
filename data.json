@@ -1,9 +1,9 @@
 {
-  "citationExportFormat": "biblatex",
-  "literatureNoteTitleTemplate": "({{year}}) {{title}}",
-  "literatureNoteFolder": "Papers",
-  "literatureNoteContentTemplate": "# {{title}}\nAuthors: {{authorString}}\nCitekey: [[@{{citekey}}]]\nTags: #paper \n[Paper Link]({{URL}})\n\n## Notes\n",
-  "markdownCitationTemplate": "[[@{{citekey}}]]",
-  "alternativeMarkdownCitationTemplate": "[@{{citekey}}]",
-  "citationExportPath": "Citations/citations.md"
-}
+    "citationExportFormat": "biblatex",
+    "literatureNoteTitleTemplate": "({{year}}) {{title}}",
+    "literatureNoteFolder": "Papers",
+    "literatureNoteContentTemplate": "# {{title}}\nAuthors: {{authorString}}\nCitekey: [[@{{citekey}}]]\n[Paper Link]({{URL}})\n<iframe width=\"100%\" height=\"300px\" \n\tsrc=\"{{URL}}\" \n\tframeborder=\"1\" \n\tallow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" \nallowfullscreen/>\n\nTags: #paper \n## Notes\n",
+    "markdownCitationTemplate": "[[@{{citekey}}]]",
+    "alternativeMarkdownCitationTemplate": "[@{{citekey}}]",
+    "citationExportPath": "Citations/citations.md"
+  }
